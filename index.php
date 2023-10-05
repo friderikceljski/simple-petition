@@ -7,7 +7,7 @@ if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") {
 	exit;
 }
 
-require_once "dbfiles/PetitionDB.php";
+require_once "./PetitionDB.php";
 
 function getIPAddress()
 {
@@ -146,7 +146,6 @@ if (isset($_COOKIE["signed"]) && $_COOKIE["signed"] == "1") {
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- <meta property="og:image" content="/img/ogimage.png" /> -->
 	<meta property="og:title" content="Podpiši peticijo proti ukinitvi študentskih bonov." />
 	<meta property="og:description" content="Podpiši peticijo proti ukinitvi študentskih bonov!" />
 
@@ -212,7 +211,7 @@ if (isset($_COOKIE["signed"]) && $_COOKIE["signed"] == "1") {
 				<h1 class="mt-4 text-4xl font-bold text-yellow-600">PETICIJA PROTI UKINITVI ŠTUDENTSKIH BONOV</h1>
 			</div>
 			<div class="flex-shrink-0">
-				<img src="img/SLO_Logotip_PNG.png" alt="logotip ŠOS" class="h-48 p-7 md:p-10 md:mx-auto">
+				<img src="./SLO_Logotip_PNG.png" alt="logotip ŠOS" class="h-48 p-7 md:p-10 md:mx-auto">
 			</div>
 		</div>
 
